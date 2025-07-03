@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: ptmplace-backend
+  datasource:
+    url: jdbc:h2:file:${H2_DATABASE_LOCATION}
+  neo4j:
+    uri: ${NEO4J_URI}
+    authentication:
+      username: ${NEO4J_USERNAME}
+      password: ${NEO4J_PASSWORD}
+  data:
+    neo4j:
+      database: ${NEO4J_DATABASE}
+
+server:
+  error:
+    include-message: always
+
+jwt:
+  secret-key: ${JWT_SECRET_KEY}
+  expiration:
+    access: 86400000
+    refresh: 604800000
+
+ptmplace:
+  security:
+    frontend-url: ${FRONTEND_URL}
