@@ -1,0 +1,92 @@
+# Neo4j Database
+neo4j-data/
+**/neo4j-data/
+**/*.db
+**/*.transaction.db.*
+**/neostore.*
+**/schema.index
+**/messages.log
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Build artifacts
+target/
+build/
+out/
+bin/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven (если используется)
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+# Gradle (если используется)
+.gradle/
+build/
+
+# Node.js (если используется)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (если используется)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Java
+*.class
+*.war
+*.ear
+
+# Application specific
+*.properties
+*.yml
+*.yaml
+config/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files (general)
+*.mdb
+*.accdb
+*.sqlite
+*.dump
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
