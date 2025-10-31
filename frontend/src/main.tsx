@@ -22,7 +22,7 @@ const ticketsServiceTheme: CustomFlowbiteTheme = {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <Flowbite theme={{ theme: ptmplaceTheme }}>
+      <Flowbite theme={{ theme: ticketsServiceTheme }}>
           <BrowserRouter>
               <Routes>
                   <Route path="/" element={<ProtectedRoute>

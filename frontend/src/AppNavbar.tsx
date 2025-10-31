@@ -14,7 +14,7 @@ export default function AppNavbar() {
             <Navbar.Brand href="https://flowbite-react.com">
                 <img src="/ticketService.svg" className="mr-3 h-6 sm:h-9" alt="ticketService Logo"/>
                 <span
-                    className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">ptmplace</span>
+                    className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">ticketService</span>
             </Navbar.Brand>
             <div className="flex md:order-2">
                 <DarkThemeToggle />

@@ -11,19 +11,21 @@ services:
     image: ticketservice:latest
     build: .
     environment:
-      H2_DATABASE_LOCATION: ./test.db
-      JWT_SECRET_KEY: "IvqBPC8wpaxNM/aMmy8pntg0ERBlbXgUpOWvl4U2Jcc="
-      NEO4J_DATABASE: neo4j
-      NEO4J_USERNAME: neo4j
-      NEO4J_PASSWORD: testtest
-      NEO4J_URI: bolt://neo4j:7687/
-      FRONTEND_URL: http://localhost:3001
+      H2_DATABASE_LOCATION: ${H2_DATABASE_LOCATION}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      NEO4J_DATABASE: ${NEO4J_DATABASE}
+      NEO4J_USERNAME: ${NEO4J_USERNAME}
+      NEO4J_PASSWORD: ${NEO4J_PASSWORD}
+      NEO4J_URI: ${NEO4J_URI}
+      FRONTEND_URL: ${FRONTEND_URL}
     ports:
       - "8080:8080"
     networks:
       - ticketService-net
     depends_on:
       - neo4j
+    env_file:
+      - .env
 
   ticketService-frontend:
     container_name: ticketService-frontend
@@ -45,11 +47,11 @@ services:
       dockerfile: Dockerfile
     hostname: neo4j
     environment:
-      NEO4J_AUTH: "neo4j/testtest"
-      NEO4J_PLUGINS: '["apoc", "apoc-extended"]'
-      NEO4J_apoc_export_file_enabled: "true"
-      NEO4J_apoc_import_file_enabled: "true"
-      NEO4J_apoc_import_file_use__neo4j__config: "true"
+      NEO4J_AUTH: ${NEO4J_AUTH}
+      NEO4J_PLUGINS: ${NEO4J_PLUGINS}
+      NEO4J_apoc_export_file_enabled: ${NEO4J_apoc_export_file_enabled}
+      NEO4J_apoc_import_file_enabled: ${NEO4J_apoc_import_file_enabled}
+      NEO4J_apoc_import_file_use__neo4j__config: ${NEO4J_apoc_import_file_use__neo4j__config}
       NEO4J_server_directories_import: "/"
       NEO4J_apoc_initializer_neo4j_cypher: 'CALL apoc.cypher.runFile("file:///scripts/init.cypher");'
     ports:
@@ -61,3 +63,5 @@ services:
       - "./neo4j-data:/data"
       - "./neo4j-logs:/logs"
       - "./neo4j-plugins:/var/lib/neo4j/plugins"
+    env_file:
+      - .env
