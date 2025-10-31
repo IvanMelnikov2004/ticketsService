@@ -1,0 +1,66 @@
+2025-10-31 05:18:40.041+0000 INFO  Logging config in use: File '/var/lib/neo4j/conf/user-logs.xml'
+2025-10-31 05:18:40.062+0000 INFO  Starting...
+2025-10-31 05:18:41.072+0000 INFO  This instance is ServerId{547faad9} (547faad9-e5bd-45fc-adc6-187003fde0df)
+2025-10-31 05:18:42.246+0000 INFO  ======== Neo4j 5.26.4 ========
+2025-10-31 05:19:18.642+0000 INFO  Called db.clearQueryCaches(): Query caches successfully cleared of 2 queries.
+2025-10-31 05:19:18.879+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-10-31 05:19:19.104+0000 INFO  Bolt enabled on 0.0.0.0:7687.
+2025-10-31 05:19:19.401+0000 WARN  Leaked Mount[uri=jar:file:///var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/,root=jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/] for jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/browser
+2025-10-31 05:19:20.038+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+2025-10-31 05:19:20.040+0000 INFO  Remote interface available at http://localhost:7474/
+2025-10-31 05:19:20.045+0000 INFO  id: 4BD7CF473EF99753F2726707D1699327FBC956696C2BA5D57690AF0417DDF816
+2025-10-31 05:19:20.046+0000 INFO  name: system
+2025-10-31 05:19:20.047+0000 INFO  creationDate: 2025-10-31T05:18:44.182Z
+2025-10-31 05:19:20.047+0000 INFO  Started.
+2025-10-31 05:19:21.028+0000 INFO  [neo4j/fd6cd7c7] successfully initialized: CALL apoc.cypher.runFile("file:///scripts/init.cypher")
+2025-10-31 05:22:01.068+0000 INFO  Neo4j Server shutdown initiated by request
+2025-10-31 05:22:01.070+0000 INFO  Stopping...
+2025-10-31 05:24:36.255+0000 INFO  Logging config in use: File '/var/lib/neo4j/conf/user-logs.xml'
+2025-10-31 05:24:36.275+0000 INFO  Starting...
+2025-10-31 05:24:37.122+0000 INFO  This instance is ServerId{547faad9} (547faad9-e5bd-45fc-adc6-187003fde0df)
+2025-10-31 05:24:38.344+0000 INFO  ======== Neo4j 5.26.4 ========
+2025-10-31 05:24:54.062+0000 INFO  Called db.clearQueryCaches(): Query caches successfully cleared of 2 queries.
+2025-10-31 05:24:54.078+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-10-31 05:24:54.329+0000 INFO  Bolt enabled on 0.0.0.0:7687.
+2025-10-31 05:24:54.738+0000 WARN  Leaked Mount[uri=jar:file:///var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/,root=jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/] for jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/browser
+2025-10-31 05:24:55.532+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+2025-10-31 05:24:55.534+0000 INFO  Remote interface available at http://localhost:7474/
+2025-10-31 05:24:55.541+0000 INFO  id: 4BD7CF473EF99753F2726707D1699327FBC956696C2BA5D57690AF0417DDF816
+2025-10-31 05:24:55.542+0000 INFO  name: system
+2025-10-31 05:24:55.543+0000 INFO  creationDate: 2025-10-31T05:18:44.182Z
+2025-10-31 05:24:55.544+0000 INFO  Started.
+2025-10-31 05:24:56.921+0000 INFO  [neo4j/fd6cd7c7] successfully initialized: CALL apoc.cypher.runFile("file:///scripts/init.cypher")
+2025-10-31 05:30:13.164+0000 INFO  Neo4j Server shutdown initiated by request
+2025-10-31 05:30:13.168+0000 INFO  Stopping...
+2025-10-31 05:32:37.912+0000 INFO  Logging config in use: File '/var/lib/neo4j/conf/user-logs.xml'
+2025-10-31 05:32:37.935+0000 INFO  Starting...
+2025-10-31 05:32:39.074+0000 INFO  This instance is ServerId{547faad9} (547faad9-e5bd-45fc-adc6-187003fde0df)
+2025-10-31 05:32:40.295+0000 INFO  ======== Neo4j 5.26.4 ========
+2025-10-31 05:32:53.647+0000 INFO  Called db.clearQueryCaches(): Query caches successfully cleared of 2 queries.
+2025-10-31 05:32:53.664+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-10-31 05:32:53.932+0000 INFO  Bolt enabled on 0.0.0.0:7687.
+2025-10-31 05:32:54.379+0000 WARN  Leaked Mount[uri=jar:file:///var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/,root=jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/] for jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/browser
+2025-10-31 05:32:55.445+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+2025-10-31 05:32:55.447+0000 INFO  Remote interface available at http://localhost:7474/
+2025-10-31 05:32:55.456+0000 INFO  id: 4BD7CF473EF99753F2726707D1699327FBC956696C2BA5D57690AF0417DDF816
+2025-10-31 05:32:55.459+0000 INFO  name: system
+2025-10-31 05:32:55.460+0000 INFO  creationDate: 2025-10-31T05:18:44.182Z
+2025-10-31 05:32:55.461+0000 INFO  Started.
+2025-10-31 05:32:57.053+0000 INFO  [neo4j/fd6cd7c7] successfully initialized: CALL apoc.cypher.runFile("file:///scripts/init.cypher")
+2025-10-31 05:41:03.366+0000 INFO  Neo4j Server shutdown initiated by request
+2025-10-31 05:41:03.373+0000 INFO  Stopping...
+2025-10-31 05:44:24.938+0000 INFO  Logging config in use: File '/var/lib/neo4j/conf/user-logs.xml'
+2025-10-31 05:44:24.957+0000 INFO  Starting...
+2025-10-31 05:44:25.886+0000 INFO  This instance is ServerId{547faad9} (547faad9-e5bd-45fc-adc6-187003fde0df)
+2025-10-31 05:44:27.655+0000 INFO  ======== Neo4j 5.26.4 ========
+2025-10-31 05:44:43.695+0000 INFO  Called db.clearQueryCaches(): Query caches successfully cleared of 2 queries.
+2025-10-31 05:44:43.709+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-10-31 05:44:43.998+0000 INFO  Bolt enabled on 0.0.0.0:7687.
+2025-10-31 05:44:44.319+0000 WARN  Leaked Mount[uri=jar:file:///var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/,root=jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/] for jar:file:/var/lib/neo4j/lib/neo4j-browser-2025.2.0.jar!/browser
+2025-10-31 05:44:45.129+0000 INFO  HTTP enabled on 0.0.0.0:7474.
+2025-10-31 05:44:45.131+0000 INFO  Remote interface available at http://localhost:7474/
+2025-10-31 05:44:45.137+0000 INFO  id: 4BD7CF473EF99753F2726707D1699327FBC956696C2BA5D57690AF0417DDF816
+2025-10-31 05:44:45.138+0000 INFO  name: system
+2025-10-31 05:44:45.139+0000 INFO  creationDate: 2025-10-31T05:18:44.182Z
+2025-10-31 05:44:45.140+0000 INFO  Started.
+2025-10-31 05:44:46.578+0000 INFO  [neo4j/fd6cd7c7] successfully initialized: CALL apoc.cypher.runFile("file:///scripts/init.cypher")

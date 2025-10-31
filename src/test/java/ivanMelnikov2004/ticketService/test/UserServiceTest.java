@@ -9,7 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import ivanMelnikov2004.ticketService.dto.request.UserFieldsRequest;
 import ivanMelnikov2004.ticketService.exception.UserAlreadyExistsException;
-import xyz.fiwka.ptmplace.mapper.UserMapperImpl;
+import  ivanMelnikov2004.ticketService.mapper.UserMapper;
 import ivanMelnikov2004.ticketService.service.UserService;
 import ivanMelnikov2004.ticketService.service.impl.UserServiceImpl;
 
@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 @DataJpaTest
-@Import({UserServiceImpl.class, UserMapperImpl.class})
+@Import({UserServiceImpl.class, UserMapper.class})
 public class UserServiceTest {
 
     @MockitoBean

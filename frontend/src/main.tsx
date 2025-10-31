@@ -12,7 +12,7 @@ import RoutePage from "./RoutePage.tsx";
 import Register from "./Register.tsx";
 import Tickets from "./Tickets.tsx";
 
-const ptmplaceTheme: CustomFlowbiteTheme = {
+const ticketsServiceTheme: CustomFlowbiteTheme = {
     textarea: {
         colors: {
             gray: "dark:bg-gray-900 dark:text-white",

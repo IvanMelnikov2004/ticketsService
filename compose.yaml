@@ -1,12 +1,14 @@
+version: "3.8"
+
 networks:
-  ptmplace-net:
+  ticketService-net:
     driver: bridge
 
 services:
-  ptmplace-backend:
+  ticketService-backend:
     container_name: ticketService-backend
-    hostname: ptmplace
-    image: ticketService:latest
+    hostname: ticketService
+    image: ticketservice:latest
     build: .
     environment:
       H2_DATABASE_LOCATION: ./test.db
@@ -19,15 +21,13 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - ptmplace-net
-    volumes:
-      - "./test.db.mv.db:/app/test.db.mv.db"
-      - "./test.db.trace.db:/app/test.db.trace.db"
+      - ticketService-net
     depends_on:
       - neo4j
-  ptmplace-frontend:
+
+  ticketService-frontend:
     container_name: ticketService-frontend
-    image: ticketService-frontend:latest
+    image: ticketservice-frontend:latest
     build:
       context: frontend
       dockerfile: Dockerfile
@@ -36,6 +36,7 @@ services:
       - "3002:3001"
     networks:
       - ticketService-net
+
   neo4j:
     container_name: neo4j
     image: neo4j:5.26.4-community
@@ -55,7 +56,7 @@ services:
       - "7474:7474"
       - "7687:7687"
     networks:
-      - ptmplace-net
+      - ticketService-net
     volumes:
       - "./neo4j-data:/data"
       - "./neo4j-logs:/logs"

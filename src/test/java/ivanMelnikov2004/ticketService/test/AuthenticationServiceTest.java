@@ -22,14 +22,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
-import xyz.fiwka.ptmplace.mapper.UserMapperImpl;
+import  ivanMelnikov2004.ticketService.mapper.UserMapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 @DataJpaTest
 @EnableConfigurationProperties(JwtProperties.class)
-@Import({AuthenticationServiceImpl.class, UserServiceImpl.class, UserMapperImpl.class, JwtTokenProvider.class, JwtUtil.class, UserDetailsService.class})
+@Import({AuthenticationServiceImpl.class, UserServiceImpl.class, UserMapper.class, JwtTokenProvider.class, JwtUtil.class, UserDetailsService.class})
 public class AuthenticationServiceTest {
 
     private static final String JWT_SECRET_KEY = "IvqBPC8wpaxNM/aMmy8pntg0ERBlbXgUpOWvl4U2Jcc=";

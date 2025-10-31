@@ -14,12 +14,12 @@ import org.springframework.context.annotation.Import;
 import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
-import xyz.fiwka.ptmplace.mapper.CityMapperImpl;
+import ivanMelnikov2004.ticketService.mapper.CityMapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataNeo4jTest
-@Import({CityServiceImpl.class, CityMapperImpl.class})
+@Import({CityServiceImpl.class, CityMapper.class})
 public class CityServiceTest {
 
     private static Neo4j neo4jEmbeddedServer;
